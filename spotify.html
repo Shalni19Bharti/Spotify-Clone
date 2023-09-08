@@ -3,9 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./logo (1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spotify.css">
 </head>
 <body>
-    
+    <div class="main">
+        <div class="sidebar">
+           <div class="nav">
+            <div class="nav-option" style="opacity: 1;">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </div>
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+            </div>
+           </div>
+           <div class="library">
+            <div class="option">
+                <div class="lib-option nav-option">
+                    <img src="library_icon.png">
+                    <a href="#">Your Library</a>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="lib-box">
+                <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you updated on new episode</p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="navbar">
+                <div class="forward">
+                    <img src="backward_icon.png">
+                    <img src="forward_icon.png" class="hide">
+                </div>
+                <div class="backward">
+                    <button class="badge nav-items hide">Explore Premium</button>
+                    <button class="badge nav-items dark-badge"><i class="fa-regular fa-circle-down"></i> Install App </button>
+                    <i class="fa-regular fa-user nav-items"></i>
+                </div>
+            </div>
+            <div class="cards">
+
+                <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="card1img.jpeg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title"> Top 50 - Global</p>
+                        <p class="card-information"> Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+
+
+
+                <h2>Trending now near you</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="card2img.jpeg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title">Trending</p>
+                        <p class="card-information">Hottest Hindi Music , Bollywood songs ...</p>
+                    </div>
+                    <div class="card">
+                        <img src="punjabi.jpg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title">Hot Hits Punjabi</p>
+                        <p class="card-information"> Catch the hottest Punjabi tracks with...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card4img.jpeg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title">Bollywood Song</p>
+                        <p class="card-information">Bollywood songs that ruled hearts...</p>
+                    </div>
+                    <div class="card">
+                        <img src="rocky.png" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title">Rocky & Rani kii..</p>
+                        <p class="card-information">Pritam Amitabh Bhattacharya</p>
+                    </div>
+                </div>
+                <h2>Spotify original & exclusive podcasts</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="chanakya.png" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title"> Chanakya Niti</p>
+                        <p class="card-information">Kiran Chavda</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpeg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title">LOFI-Music</p>
+                        <p class="card-information"> Spotify Studio...</p>
+                    </div>
+                    <div class="card">
+                        <img src="gone.png" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title">Gone Girl</p>
+                        <p class="card-information">Badshah , Payal Dev</p>
+                    </div>
+                    <div class="card">
+                        <img src="horror.png" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title">The Horror Show</p>
+                        <p class="card-information">Horror Time</p>
+                    </div>
+                </div>
+
+                <h2>Featured Charts</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="icon_1.jpeg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title"> Top Songs-Global</p>
+                        <p class="card-information"> Your weekly updates of the most played track...</p>
+                    </div>
+                    <div class="card">
+                        <img src="icon_2.jpeg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title"> Top Songs-India</p>
+                        <p class="card-information"> Your weekly updates of the most played track...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card1img.jpeg" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title"> Top 50-Global</p>
+                        <p class="card-information"> Your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="icon_4.png" width="100%" style="border-radius: 0.5rem;">
+                        <p class="card-title"> Top 50-India</p>
+                        <p class="card-information"> Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <div class="album"></div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="player_icon1.png">
+                    <img src="player_icon2.png">
+                    <img src="play_musicbar.png" class="icon" style="height: 1.75rem; opacity: 1;">
+                    <img src="player_icon4.png">
+                    <img src="player_icon5.png">
+                </div>
+                <div class="playback-bar">
+                    <span class="current-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="total-time">5:23</span>
+                </div>
+            </div>
+
+            <div class="controls"></div>
+        </div>
+    </div>
 </body>
 </html>
